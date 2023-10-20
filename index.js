@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const dbService = require('./server/db');
 
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://6532cfb3062e1b0657119f93--melodic-tarsier-8f3621.netlify.app/',
 };
 
 app.use(cors(corsOptions));
