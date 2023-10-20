@@ -5,11 +5,7 @@ const cors = require("cors");
 const bodyParser = require('body-parser');
 const dbService = require('./server/db');
 
-const corsOptions = {
-  origin: 'https://6532cfb3062e1b0657119f93--melodic-tarsier-8f3621.netlify.app/',
-};
-
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(bodyParser.json());
 app.use("/", require("./server/routes"));
 
